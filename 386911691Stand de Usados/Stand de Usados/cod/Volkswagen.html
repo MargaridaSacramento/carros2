@@ -1,0 +1,292 @@
+﻿<!doctype html>
+<html>
+<head>
+	<style>
+		body {
+		  font-family: "Lato", sans-serif;
+		}
+
+		.sidepanel  {
+		  width: 0;
+		  position: fixed;
+		  z-index: 1;
+		  height: 1000px;
+		  top: 0;
+		  left: 0;
+		  background-color: #de5d21  ;
+		  overflow-x: hidden;
+		  transition: 0.5s;
+		  padding-top: 60px;
+		}
+
+		.sidepanel a {
+		  padding: 8px 8px 8px 32px;
+		  text-decoration: none;
+		  font-size: 25px;
+		  color: #ffffff;
+		  display: block;
+		  transition: 0.3s;
+		}
+
+		.sidepanel a:hover {
+		  color: #f1f1f1;
+		}
+
+		.sidepanel .closebtn {
+		  position: absolute;
+		  top: 0;
+		  right: 25px;
+		  font-size: 36px;
+		}
+
+		.openbtn {
+		  font-size: 20px;
+		  cursor: pointer;
+		  background-color: #f06220 ;
+		  color: white;
+		  padding: 10px 15px;
+		  border: none;
+		}
+
+		.openbtn:hover {
+		  background-color: #de5d21 ;
+		}
+		.card {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.488);
+		  transition: 0.3s;
+		  width: 100%;
+		  border-radius: 10px;
+		  background-color:rgb(255, 255, 255);
+		  
+		}
+
+		.card-text {
+ 			font-size: 1.5rem;
+			letter-spacing: 0.1rem;
+ 			line-height: 1.25;
+  			color: #3d3d3d;
+ 			margin-bottom: 2rem;
+			margin-left: 25%;
+			margin-right: 25%;
+			align: center;
+		}
+		
+		.card:hover {
+		  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		}
+		
+		.container {
+		  padding: 2px 16px;
+		}
+
+		img {
+ 			border-radius: 5px 5px 0 0;
+			
+			
+		}
+
+		.btn {
+  			background-color: #ddd;
+  			border: none;
+			color: black;
+			padding: 16px 32px;
+			text-align: center;
+			font-size: 16px;
+			margin: 4px 2px;
+			transition: 0.3s;
+			cursor: pointer;
+ 			border-radius: 16px;
+			display: inline-block;
+		}
+
+		.btn:hover {
+			background-color: #963207;
+			color: white;
+		}
+
+		.dropbtn {
+			background-color: #96320700 !important;
+  			border: none;
+			color: rgb(255, 255, 255);
+			padding: 5px 32px;
+			text-align: center;
+			font-size: 25px;
+			margin: 4px 2px;
+			transition: 0.3s;
+			cursor: pointer;
+ 			border-radius: 16px;
+			display: inline-block;
+		}
+
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		}
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  min-width: 160px;
+		  overflow: auto;
+		  z-index: 1;
+		  background-color: #dddddd00;
+		  border: none;
+		  color: black;
+		  padding: 16px 32px;
+		   font-size: 16px;
+		   margin: 4px 2px;
+		   transition: 0.3s;
+		   cursor: pointer;
+		}
+
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+
+		.show {display: block;}
+
+		table#albums{
+   			border-collapse:separate;
+   			border-spacing:30px 30px;
+		}
+
+	</style>
+
+
+	<!-- Título da Página -->
+
+	<title>
+		J.G Automóvel
+	</title>
+	<link rel="icon" 
+	href="../img/logo_50_crop.ico">
+
+</head>
+
+
+<body style="background-color:rgb(240, 98, 32);"
+		link="#000000"
+		vlink="#000000"
+		alink="#000000">
+		
+	<button class="openbtn" onclick="openNav()">☰ </button>
+		<div id="mySidepanel" class="sidepanel">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		  <a href="../Index.html">Início</a>
+		  <a href="Carros Usados.html">Carros Usados</a>
+		  <a href="Carros Vip.html">Carros Vip</a>
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">Marcas </button>
+				<div id="myDropdown" class="dropdown-content">
+				<a href="Renault.html">Renault</a>
+				<a href="Peugeot.html">Peugeot</a>
+				<a href="Mercedes.html">Mercedes</a>
+				<a href="Volkswagen.html">Volkswagen</a>
+				<a href="Opel.html">Opel</a>
+				<a href="Seat.html">Seat</a>
+			</div>
+		  </div>
+		</div>
+
+	<table align="center">
+	<tr>
+		<td>
+			<h1>
+				<font
+					color="#FFFFFF">
+						J.G Automóvel
+				</font>
+			</h1>
+			<h2 align="center">
+				<font 
+					color="#FFFFFF" 
+					face="arial">
+						Stand de usados
+				</font>
+			</h2>
+	
+	
+		<td width="30">
+		
+	
+	<td >
+		<img src="..\img\logo_50_crop.png"
+		width="250"
+		height="300">
+	</tr>
+	</table>
+	
+	<br><br><br><br><br> 
+	
+	<h2 align="center">
+			<font 
+				color="#FFFFFF" 
+				face="arial">
+					Anúncios
+			</font>
+	</h2>
+	<!-- Rodapé das Páginas -->
+	<table id="albums" cellspacing="0">
+		<tr>
+			<td>
+				<a href="..\cod\Golf Gti.html"
+				style="text-decoration:none">
+				<div class="card">
+					<img src="..\img\golf 1.webp" alt="Avatar" style="max-height:450px; max-width:450px;">
+					<div class="img">
+							  <h4 class="card-text">
+							<b>Golf VII Gti</b>
+							</h4>
+							<br>
+					</div>
+				</div>
+				</a>
+			</td>
+		</tr>
+	</table>
+
+	
+	<br><br><br><br><br><br>
+
+	<!-- Fim Rodapé das Páginas -->
+	
+	
+	<!-- Inicio do Script -->
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+	<!-- Fim Rodapé das Páginas -->
+	
+</body>
+
+
+</html>

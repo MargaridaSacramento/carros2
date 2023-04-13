@@ -1,0 +1,231 @@
+﻿<!doctype html>
+<html>
+<head>
+
+	<style>
+		.card {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.488);
+		  transition: 0.3s;
+		  width: 70%;
+		  border-radius: 10px;
+		  background-color:rgb(255, 255, 255);"
+		}
+
+		.card-text {
+ 			font-size: 1.5rem;
+			letter-spacing: 0.1rem;
+ 			line-height: 1.25;
+  			color: #3d3d3d;
+ 			margin-bottom: 2rem;
+			margin-left: 25%;
+		}
+		
+		.card:hover {
+		  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		}
+		
+		.container {
+		  padding: 2px 16px;
+		}
+
+		img {
+ 			border-radius: 5px 5px 0 0;
+		}
+
+		.btn {
+  			background-color: #ddd;
+  			border: none;
+			color: black;
+			padding: 16px 45px;
+			text-align: center;
+			font-size: 16px;
+			margin: 4px 2px;
+			transition: 0.3s;
+			cursor: pointer;
+ 			border-radius: 16px;
+			display: inline-block;
+		}
+
+		.btn:hover {
+			background-color: #963207;
+			color: white;
+		}
+
+		.dropbtn {
+ 			background-color: #ddd;
+  			color: rgb(0, 0, 0);
+ 			padding: 16px 45px;
+			margin: 4px 2px;
+ 			font-size: 16px;
+			transition: 0.3s;
+			border: none;
+			display: inline-block;
+			border-radius: 16px;
+			cursor: pointer;
+		}
+
+		.dropdown {
+		position: relative;
+		display: inline-block;
+		}
+
+		.dropdown-content {
+		display: none;
+		border-radius: 5px;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px #963207;
+		z-index: 1;
+		}
+
+		.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #963207;
+			border-radius: 5px ;
+		}
+
+		.dropdown:hover .dropdown-content {
+		display: block;
+		}
+
+		.dropdown:hover .dropbtn {
+			background-color: #963207;
+		}
+		.show {display: block;}
+		
+		footer {
+			margin-top: 1%;
+ 			text-align: center;
+  			padding: 3px;
+  			background-color: DarkSalmon;
+  			color: white;
+		}
+
+	</style>
+
+
+	<!-- Título da Página -->
+
+	<title>
+		J.G Automóvel
+	</title>
+	<link rel="icon" 
+	href="img/logo_50_crop.ico">
+
+</head>
+
+
+<body style="background-color:rgb(240, 98, 32);"
+		link="#000000"
+		vlink="#000000"
+		alink="#000000">
+	
+	<table align="center">
+	<tr>
+		<td>
+			<h1>
+				<font
+					color="#FFFFFF">
+						J.G Automóvel
+				</font>
+			</h1>
+			<h2 align="center">
+				<font 
+					color="#FFFFFF" 
+					face="arial">
+						Stand de usados
+				</font>
+			</h2>
+	
+	
+		<td width="30">
+		
+	
+	<td >
+		<img src="img\logo_50_crop.png"
+		width="250"
+		height="300">
+	</tr>
+	</table>
+	
+	<br><br><br><br><br> 
+<table align="center">
+	<td>
+		<button class="btn">
+			<a href="cod\Carros Usados.html"
+				style="text-decoration:none">
+				Carros Usados
+			</a>
+		</button>
+	</td>
+	<td>
+		<button	class="btn">
+			<a href="cod\Carros Vip.html"
+			style="text-decoration:none">
+				Carros Vip
+			</a>
+		</button>
+	</td>
+	<td>
+		<div class="dropdown">
+		  <button onclick="myFunction()" class="dropbtn">Marcas</button>
+		  <div id="myDropdown" class="dropdown-content">
+			<a href="cod\Renault.html">Renault</a>
+			<a href="cod\Peugeot.html">Peugeot</a>
+			<a href="cod\Mercedes.html">Mercedes</a>
+			<a href="cod\Volkswagen.html">Volkswagen</a>
+			<a href="cod\Opel.html">Opel</a>
+			<a href="cod\Seat.html">Seat</a>
+		  </div>
+		</div>
+	</td>	
+	
+</table>
+
+	<br><br><br><br><br> 
+	<!-- Rodapé das Páginas -->
+	<footer>
+		<p>Av. Infante Dom Henrique 320</p>
+		<p>1800-919 Lisboa</p>
+		<p>Lisboa, Lisboa Copyright © 2023  Jorge e Gonga   NIF: 558554841564</p>
+		Intermediação de crédito  |   Livro de reclamações  |   Conflitos de Consumo  |  Politica de Privacidade<br>
+		
+	  </footer>
+	<!-- Fim Rodapé das Páginas -->
+	
+	
+	<!-- Inicio do Script -->
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+	<!-- Fim Rodapé das Páginas -->
+	
+</body>
+
+
+</html>
